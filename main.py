@@ -38,10 +38,6 @@ data = data.fillna(0)
 # 2. Convert Dates
 #_________
 
-# Convert dates columns to datetime since Random Forest can not read strings
-#data["Begin Date"] = pd.to_datetime(data["Begin Date"])
-#data["End Date"] = pd.to_datetime(data["End Date"])
-
 # Convert date columns to datetime (ignore invalid values like 0)
 data["Begin Date"] = pd.to_datetime(data["Begin Date"], errors='coerce')
 data["End Date"] = pd.to_datetime(data["End Date"], errors='coerce')
