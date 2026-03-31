@@ -79,7 +79,9 @@ x_train, x_test, y_train, y_test = train_test_split(
 # 6. Train Model
 #________
 
-model = RandomForestRegressor(random_state=3)
+# Set n-estimators = 10 tp reduce the number of trees in Random Forest model to reduce computation time.
+# model = RandomForestRegressor(random_state=3)
+model = RandomForestRegressor(n_estimators=10, random_state=3)
 model.fit(x_train, y_train)
 
 #______
