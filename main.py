@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 
 # Load the dataset
 data = pd.read_csv("data/Hospital_Staffing_dataset.csv")
@@ -90,3 +91,12 @@ model.fit(x_train, y_train)
 predictions = model.predict(x_test)
 print("\nSample Predictions: ")
 print(predictions[:10])
+
+#_______
+#Model Evaluation
+#__________
+mse = mean_squared_error(y_test, predictions)
+r2 = r2_score(y_test, predictions)
+print("\nModel Evaluation: ", round(mse, 4))
+print("MSE:", round(mse, 4))
+print("R2:", round(mse, 4))
