@@ -1,0 +1,9 @@
+88e479a - Drum Holliday, Sat Apr 4 18:01:24 2026 -0500 : Added Model Evaluation to main.py lines 95-102, Uodated the README with a project overview, data prep, etc.., Added final 2 test outout screenshots to the Screenshots folder.
+8b3c0b4 - Drum Holliday, Tue Mar 31 15:20:13 2026 -0500 : Added screenshots 1a and 1b to show tested output from Part C
+0561055 - Drum Holliday, Tue Mar 31 15:17:30 2026 -0500 : added line 84 to main.py to improve model performance by reducing the number of trees (n_estimators) in Random Forest to prevent the long runtime I was previously getting
+851b45f - Drum Holliday, Tue Mar 31 15:01:03 2026 -0500 : deleted lines 41-43 of code that did not work for converting dates
+d8ecea0 - Drum Holliday, Tue Mar 31 14:58:59 2026 -0500 : Part C: cleaned the dataset, handled missing values, converted dates to duration, encoded (translated) category values into numnerial format, implemented Random Forest model
+c83b7fd - Drum Holliday, Mon Mar 23 21:19:09 2026 -0500 : deleted Hospital dataset and added School Attendance b/c after reading the scenarios and looking at the data I think there is a mismatch between the Hospital scenario and the dataset for Hospital. The School scenario and dataset seem more aligned.
+dc10bc8 - Drum Holliday, Mon Mar 23 20:23:37 2026 -0500 : created main.py and testest some output to make sure python worked properly in IntelliJ since it can be tricky to set up in that IDE. Works fine now.
+3dc451d - Drum Holliday, Mon Mar 23 20:15:14 2026 -0500 : Added dataset and configure to .gitignore
+bf6e142 - Emilio Miller, Fri Feb 28 22:28:49 2025 +0000 : Update file README.md
